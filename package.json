@@ -1,0 +1,45 @@
+{
+  "name": "ShareCooking",
+  "version": "1.0.0",
+  "description": "Charts",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedrocleto/sharecooking.git"
+  },
+  "author": "PCM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedrocleto/sharecooking/issues"
+  },
+  "homepage": "https://github.com/pedrocleto/sharecooking",
+  "dependencies": {
+    "css-loader": "^0.12.0",
+    "file-loader": "*",
+    "firebase": "^2.2.4",
+    "jest-cli": "*",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^3.0.0-beta.7",
+    "react": "^0.13.2",
+    "react-hot-loader": "^1.2.6",
+    "react-tools": "^0.13.2",
+    "sass-loader": "^1.0.1",
+    "style-loader": "^0.12.1",
+    "svgo": "^0.5.1",
+    "svgo-loader": "*",
+    "uglify-js": "^2.4.20",
+    "webpack": "^1.8.11"
+  },
+  "devDependencies":{
+    "webpack-dev-server": "^1.8.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}
